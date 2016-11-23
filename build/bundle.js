@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -44,18 +44,27 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	const $ = __webpack_require__(1);
-	const _=__webpack_require__(2);
-	'use strict';
-	// import $ from jquery;
-	_.times(5,function(n){console.log(n)});
+	__webpack_require__(1);
+	(function webpackMissingModule() { throw new Error("Cannot find module \"bundle.js\""); }());
+
+
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+	const $ = __webpack_require__(2);
+	const _=__webpack_require__(3);
+
+
+	_.times(10,function(n){console.log(n)});
+
 	console.log(a);
 	$('h1').css({ color: 'red' });
 
 
 
 /***/ },
-/* 1 */
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -9903,7 +9912,7 @@
 
 
 /***/ },
-/* 2 */
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -26972,10 +26981,10 @@
 	  }
 	}.call(this));
 
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(3)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(4)(module)))
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {

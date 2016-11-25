@@ -8,7 +8,7 @@
     "lint": "eslint app.js",
     "lint-html": "eslint **/*.js -f html -o ./reports/lint-results.html",
     "lint-fix": "eslint --fix app.js",
-    "start" :"node_modules/.bin/webpack-dev-server"
+    "start" :"node_modules/.bin/webpack-dev-server  --port 8081"
   },
   "keywords": [],
   "author": "",

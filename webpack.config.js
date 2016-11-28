@@ -1,4 +1,5 @@
 const path = require('path');
+var webpackUglifyJsPlugin = require('webpack-uglify-js-plugin');
 module.exports = {
   entry: {
     'varsion1/v1': ["./app.js","./index.css"],
@@ -27,5 +28,19 @@ module.exports = {
 
     ],
   },
+  plugins: [
+    new webpackUglifyJsPlugin({
+      cacheFolder: path.resolve(__dirname, './public/webpack_cached/'),
+      debug: true,
+      minimize: true,
+      sourceMap: false,
+      output: {
+        comments: false
+      },
+      compressor: {
+        warnings: false
+      }
+    })
+  ],
 
 };

@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "lint": "eslint app.js",
+    "lint": "eslint ./*.js",
     "lint-html": "eslint **/*.js -f html -o ./reports/lint-results.html",
-    "lint-fix": "eslint --fix app.js",
+    "lint-fix": "eslint --fix ./*.js",
     "start": "node_modules/.bin/webpack-dev-server  --port 8081"
   },
   "keywords": [],

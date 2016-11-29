@@ -1,9 +1,20 @@
 // const $ = require('jquery');
-import $ from 'jquery';
-import _ from 'lodash' ;
-// import './index.css';
-const a = [1, 2, 3, 4, 5, 6];
-const item = _.filter(a, (items) => items > 4);
-console.log(item);
-$('h1').css({ color: 'black' });
+/*import $ from 'jquery';
+import _ from 'lodash' ;*/
+import React, { Component ,PropTypes } from 'react';
+import ReactDOM from 'react-dom';
+import App  from './src/index';
+/*$('h1').css({ color: 'black' });*/
+
+/*class  app extends React.createClass{
+	render()
+	{
+	return(	<div>this is a test for react</div>)
+	}
+};
+*/
+
+
+ReactDOM.render(<App/>, document.getElementById('react'));
+
 

@@ -4,6 +4,9 @@ import _ from 'lodash' ;*/
 import React, { Component ,PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import App  from './src/index';
+import helloWorld from './pages/helloWorld';
+import ReactMarkdown from 'react-markdown';
+//var input = '# This is a header\n\nAnd this is a paragraph';
 /*$('h1').css({ color: 'black' });*/
 
 /*class  app extends React.createClass{
@@ -15,6 +18,6 @@ import App  from './src/index';
 */
 
 
-ReactDOM.render(<App/>, document.getElementById('react'));
+ReactDOM.render(<ReactMarkdown source={helloWorld} />, document.getElementById('react'));
 
 

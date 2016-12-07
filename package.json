@@ -15,9 +15,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+  
     "react": "15.x.x",
     "react-dom": "15.x.x",
-    "react-markdown": "^2.4.2"
+    "react-markdown": "^2.4.2",
+   
   },
   "devDependencies": {
     "babel-core": "^6.18.2",

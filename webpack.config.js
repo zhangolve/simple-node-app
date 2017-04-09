@@ -3,7 +3,7 @@ const webpackUglifyJsPlugin = require('webpack-uglify-js-plugin');
 module.exports = {
   entry: {
     'varsion1/v1': ['./app.js', './index.css'],
-    'version2/v2': ['./app2.js', './index.css'],
+    //'version2/v2': ['./app2.js', './index.css'],
   /*  'stylish.js': ['./index.css'],*/
   },
   // 两个入口地址，webpack之后生成了两个文件，这两个文件在index.html中被引用了。
@@ -26,8 +26,7 @@ module.exports = {
         query: {
           presets: ['es2015'],
         },
-      },
-      {test: /\.json$/,loader: 'json' }
+      }
 
     ]
   },
